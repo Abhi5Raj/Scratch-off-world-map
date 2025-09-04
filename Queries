@@ -1,0 +1,13 @@
+// 1st table
+CREATE TABLE countries(
+id SERIAL PRIMARY KEY,
+country_code CHAR(2) UNIQUE NOT NULL ,
+country_name CHAR(100) NOT NULL UNIQUE
+);
+
+//2nd table
+CREATE TABLE visited_countries(
+id SERIAL PRIMARY KEY,
+country_code CHAR(2) NOT NULL UNIQUE
+);
+
